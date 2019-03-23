@@ -55,18 +55,18 @@ public class MainController {
         MusicalRestApi musicalRestApi = retrofit.create(MusicalRestApi.class);
 
         //On récupére un objet call.
-        Call<List> call = musicalRestApi.Musical();
+        Call<List<Musical>> call = musicalRestApi.Musical();
 
-        call.enqueue(new Callback<List>() {
+        call.enqueue(new Callback<List<Musical>>() {
             @Override
-            public void onResponse(Call<List> call, Response<List> response) {
+            public void onResponse(Call<List<Musical>> call, Response<List<Musical>> response) {
                 List<Musical> listMusical = response.body();
                 mainActivity.showList(listMusical);
                 mainActivity.hideLoader();
             }
 
             @Override
-            public void onFailure(Call<List> call, Throwable t) {
+            public void onFailure(Call<List<Musical>> call, Throwable t) {
                 Log.d("Erreur", "API ERROR");
             }
         });

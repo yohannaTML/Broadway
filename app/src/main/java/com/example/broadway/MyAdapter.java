@@ -15,6 +15,8 @@ import android.widget.TextView;
 
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
     private List<Musical> mList;
+    private final OnItemClickListener listener;
+    private Context mContext;
 
 
     // Provide a reference to the views for each data item
@@ -37,8 +39,10 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
 
 
     // Provide a suitable constructor (depends on the kind of dataset)
-    public MyAdapter(List<Musical> list){
+    public MyAdapter(Context context,List<Musical> list, OnItemClickListener listener){
         mList = list;
+        this.listener = listener;
+        mContext = context;
 
     }
     // Create new views (invoked by the layout manager)
@@ -67,6 +71,13 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
         holder.mTextViewAuthor.setText("By: " + authorName);
         Picasso.get().load(imageUrl).fit().centerInside().into(holder.mImageView);
 
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                listener.onItemClick(currentItem);
+
+            }
+        });
     }
 
     // Return the size of your dataset (invoked by the layout manager)

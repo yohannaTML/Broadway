@@ -63,6 +63,7 @@ public class MainActivity extends AppCompatActivity {
                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 intent.putExtra("theatre", item.getTheatre());
                 intent.putExtra("story", item.getStory());
+                intent.putExtra("card", item.getImagecard_url());
 
 
                 startActivity(intent);

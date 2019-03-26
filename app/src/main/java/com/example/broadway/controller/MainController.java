@@ -1,5 +1,7 @@
-package com.example.broadway;
+package com.example.broadway.controller;
 
+import com.example.broadway.view.MainActivity;
+import com.example.broadway.model.MusicalRestApi;
 import com.example.broadway.model.Musical;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -7,7 +9,6 @@ import com.google.gson.reflect.TypeToken;
 
 import android.content.SharedPreferences;
 import android.util.Log;
-import android.widget.LinearLayout;
 
 import java.lang.reflect.Type;
 import java.util.List;

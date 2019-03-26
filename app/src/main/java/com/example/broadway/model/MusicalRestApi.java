@@ -1,4 +1,4 @@
-package com.example.broadway;
+package com.example.broadway.model;
 
 import com.example.broadway.model.Musical;
 

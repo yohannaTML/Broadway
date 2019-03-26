@@ -1,6 +1,8 @@
 package com.example.broadway;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
@@ -19,7 +21,6 @@ public class MainActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
     private MyAdapter mAdapter;
     private RecyclerView.LayoutManager layoutManager;
-
     private ProgressBar loader;
 
     private MainController controller;
@@ -31,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         recyclerView = (RecyclerView) findViewById(R.id.my_recycler_view);
         loader = findViewById(R.id.loader_main_activity);
 
-        controller = new MainController(this);
+        controller = new MainController(this, getSharedPreferences("listMusical", Context.MODE_PRIVATE));
         controller.onCreate();
     }
 

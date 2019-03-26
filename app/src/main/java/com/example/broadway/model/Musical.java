@@ -29,12 +29,9 @@ public class Musical {
         return theatre;
     }
 
-    public String getOpening_night() {
-        return opening_night;
-    }
 
-    public String getTotal_performances() {
-        return total_performances;
+    public String getDirector() {
+        return director;
     }
 
     public void setImagecard_url(String imagecard_url) {
@@ -57,12 +54,9 @@ public class Musical {
         this.theatre = theatre;
     }
 
-    public void setOpening_night(String opening_night) {
-        this.opening_night = opening_night;
-    }
 
-    public void setTotal_performances(String total_performances) {
-        this.total_performances = total_performances;
+    public void setDirector(String director) {
+        this.director = director;
     }
     public String getImage_url() {
         return image_url;
@@ -79,7 +73,6 @@ public class Musical {
     private String by;
     private String story;
     private String theatre;
-    private String opening_night;
-    private String total_performances;
+    private String director;
 
 }

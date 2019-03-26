@@ -32,14 +32,7 @@ public class MainController {
     }
 
     public void onCreate() {
-        mainActivity.showLoader();
 
-
-
-        //La création de ces objets, ce serait bien de ne pas
-        // les réinstancier plusieurs fois.
-        //--> Voir le cours de Génie Logiciel : Singleton()
-        //Pour ceux qui veulent aller plus loin -> Injection de Dépendances
         //On crée un objet Gson
         Gson gson = new GsonBuilder()
                 .setLenient()
@@ -62,7 +55,6 @@ public class MainController {
             public void onResponse(Call<List<Musical>> call, Response<List<Musical>> response) {
                 List<Musical> listMusical = response.body();
                 mainActivity.showList(listMusical);
-                mainActivity.hideLoader();
             }
 
             @Override
@@ -70,10 +62,6 @@ public class MainController {
                 Log.d("Erreur", "API ERROR");
             }
         });
-    }
-
-    public void onItemClicked(Musical itemClicked){
-
     }
 
 }

@@ -33,18 +33,6 @@ public class MainActivity extends AppCompatActivity {
 
         controller = new MainController(this);
         controller.onCreate();
-        // use this setting to
-        // improve performance if you know that changes
-        // in content do not change the layout size
-        // of the RecyclerView
-    }
-
-    public void showLoader(){
-        loader.setVisibility(View.VISIBLE);
-    }
-
-    public void hideLoader(){
-        loader.setVisibility(View.GONE);
     }
 
     public void showList(List<Musical> list){
@@ -64,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
                 intent.putExtra("theatre", item.getTheatre());
                 intent.putExtra("story", item.getStory());
                 intent.putExtra("card", item.getImagecard_url());
+                intent.putExtra("director", item.getDirector());
 
 
                 startActivity(intent);

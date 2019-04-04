@@ -28,9 +28,22 @@ Cette application a deux écrans : Un écran avec une liste et un écran avec un
 
 Splash affichant une image qui contient le nom de plusieurs comédies musicales
 
-### Ecran home
+<p align="center">
+  <img width="200" height="400" src = "https://image.noelshack.com/fichiers/2019/14/4/1554369289-56268589-380919372752942-7115750530084765696-n.png">
+</p>
 
 
+### Ecran Home
+
+<p align="center">
+  <img width="200" height="400" src = "https://image.noelshack.com/fichiers/2019/14/4/1554369288-56229285-647618042366077-451133211469152256-n.png">
+</p>
+
+### Ecran du détail du musical
+
+<p align="center">
+  <img width="200" height="400" src = "https://image.noelshack.com/fichiers/2019/14/4/1554369289-56412391-2243236935995798-7822034404145889280-n.png">  <img width="200" height="400" src = "https://image.noelshack.com/fichiers/2019/14/4/1554369288-56248108-419179485535121-8605412296925118464-n.png">
+</p>
 
 
 

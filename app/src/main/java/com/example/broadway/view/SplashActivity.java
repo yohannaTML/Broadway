@@ -1,8 +1,11 @@
-package com.example.broadway;
+package com.example.broadway.view;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+
+import com.example.broadway.R;
 
 public class SplashActivity extends AppCompatActivity {
 
@@ -13,4 +16,5 @@ public class SplashActivity extends AppCompatActivity {
         startActivity(intent);
         finish();
     }
+
 }

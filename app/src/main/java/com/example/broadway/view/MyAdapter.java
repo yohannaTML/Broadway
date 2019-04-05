@@ -1,8 +1,10 @@
-package com.example.broadway;
+package com.example.broadway.view;
 
+import com.example.broadway.R;
 import com.example.broadway.model.Musical;
+import com.example.broadway.model.OnItemClickListener;
 import com.squareup.picasso.Picasso;
-import java.util.ArrayList;
+
 import java.util.List;
 
 import android.content.Context;

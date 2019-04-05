@@ -1,4 +1,7 @@
 # WELCOME TO BROADWAY
+<p align="center">
+  <img src = "https://www.nyctourist.com/sites/default/files/broadway_banner_0.jpg">
+</p>
 
 ## Présentation
 Simple projet démontrant l'utilisation de Retrofit: d'appel WebService à une API Rest dans une application android codé en Java

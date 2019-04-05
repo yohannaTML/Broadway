@@ -4,9 +4,8 @@
 </p>
 
 ## Présentation
-Simple projet démontrant l'utilisation de Retrofit: d'appel WebService à une API Rest dans une application android codé en Java
+Fan de comédies musicales j'ai decidé de crée une API Rest et de faire ce projet démontrant l'utilisation de Retrofit: d'appel WebService à cette API dans une application android codé en Java.
 
-Cette application a deux écrans principales: Un écran avec une liste et un écran avec un détail de l’item.
 
 ## Prérequis
 - Installation Android Studio
@@ -54,7 +53,7 @@ Ecran **scrollable** qui affiche une image du musicale sur scene, Le(s) théâtr
 
 ### Bouton switch pour jouer de la musique 
 
-<br> Le bouton du haut joue aléatoirement 4 musiques de 4 comédies musicales différentes : *Here we go again* de Mamma mia, *Do you hear the people sing* de Les Misérables, *The Cercle of Life* de The Lion King et *Alexander Hamilton* de Hamilton.
+<br> Le bouton du haut joue aléatoirement 4 musiques de 4 comédies musicales différentes de l'API: *Here we go again* de Mamma mia, *Do you hear the people sing* de Les Misérables, *The Cercle of Life* de The Lion King et *Alexander Hamilton* de Hamilton.
 <p align="center">
   <img width="200" height="400" src = "https://image.noelshack.com/fichiers/2019/14/4/1554371627-56340186-808364709527128-3395331583480168448-n.png">
 </p>

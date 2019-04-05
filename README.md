@@ -28,7 +28,7 @@ Cette application a deux écrans : Un écran avec une liste et un écran avec un
 Splash affichant une image qui contient le nom de plusieurs comédies musicales
 
 <p align="center">
-  <img width="300" height="600" src = "https://image.noelshack.com/fichiers/2019/14/5/1554450464-56268589-380919372752942-7115750530084765696-n.png">
+  <img width="200" height="400" src = "https://image.noelshack.com/fichiers/2019/14/5/1554450464-56268589-380919372752942-7115750530084765696-n.png">
 </p>
 
 

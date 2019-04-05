@@ -34,19 +34,18 @@ public class MainActivity extends AppCompatActivity {
 
     private MainController controller;
 
-    MediaPlayer mySong;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        recyclerView = (RecyclerView) findViewById(R.id.my_recycler_view);
+        recyclerView = findViewById(R.id.my_recycler_view);
         loader = findViewById(R.id.loader_main_activity);
 
         controller = new MainController(this, getSharedPreferences("listMusical", Context.MODE_PRIVATE));
         controller.onCreate();
 
-        mySong = MediaPlayer.create(MainActivity.this, R.raw.here_we_go_again);
     }
 
     //Audio and Switch on action bar
@@ -60,11 +59,12 @@ public class MainActivity extends AppCompatActivity {
                 MediaPlayer.create(getApplicationContext(), R.raw.the_lion_king),
                 MediaPlayer.create(getApplicationContext(), R.raw.alexander_hamilton),
         };
+
         getMenuInflater().inflate(R.menu.action_menu, menu);
 
         MenuItem itemSwitch = menu.findItem(R.id.mySwitch);
         itemSwitch.setActionView(R.layout.use_switch);
-        final Switch sw = (Switch) menu.findItem(R.id.mySwitch).getActionView().findViewById(R.id.action_switch);
+        final Switch sw = menu.findItem(R.id.mySwitch).getActionView().findViewById(R.id.action_switch);
         sw.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
@@ -76,21 +76,12 @@ public class MainActivity extends AppCompatActivity {
         });
         return true;
     }
-    @Override
-    protected void onPause() {
-        super.onPause();
-        mySong.release();
-    }
+
 
     //Animation entre les activitées
     public void openDetailActivity(View view) {
         Intent intent = new Intent(this, DetailActivity.class);
         startActivity(intent);
-    }
-    @Override
-    public void finish() {
-        super.finish();
-        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
     }
 
     public void showList(List<Musical> list){

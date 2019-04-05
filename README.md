@@ -6,7 +6,7 @@
 ## Présentation
 Simple projet démontrant l'utilisation de Retrofit: d'appel WebService à une API Rest dans une application android codé en Java
 
-Cette application a deux écrans : Un écran avec une liste et un écran avec un détail de l’item.
+Cette application a deux écrans principales: Un écran avec une liste et un écran avec un détail de l’item.
 
 ## Prérequis
 - Installation Android Studio
@@ -16,13 +16,14 @@ Cette application a deux écrans : Un écran avec une liste et un écran avec un
 
 - Architecture MVC
 - Appels REST
-- Ecrans : 2 activités
+- Ecrans : 2 activités + 1 ecran de chargement
 - Affichage d'une liste dans un RecyclerView et CardView
 - Affichage du détail d'un item de la liste
 - Gitflow propre
 - Fonctions supplémentaires :
   - Notifications Push ( Firebase )
-  - Bouton Switch qui lance une musique
+  - Bouton Switch qui joue une musique
+  - Ecran des détails scrollable
   
 ## Fonctionnalités
 

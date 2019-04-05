@@ -28,7 +28,7 @@ Cette application a deux écrans : Un écran avec une liste et un écran avec un
 Splash affichant une image qui contient le nom de plusieurs comédies musicales
 
 <p align="center">
-  <img width="200" height="400" src = "https://image.noelshack.com/fichiers/2019/14/4/1554369289-56268589-380919372752942-7115750530084765696-n.png">
+  <img width="200" height="400" src = "https://image.noelshack.com/fichiers/2019/14/5/1554450464-56268589-380919372752942-7115750530084765696-n.png">
 </p>
 
 
@@ -37,7 +37,7 @@ Splash affichant une image qui contient le nom de plusieurs comédies musicales
 Affiche la *liste des musicales* avec une affiche, le nom et le nom du créateur.
 
 <p align="center">
-  <img width="200" height="400" src = "https://image.noelshack.com/fichiers/2019/14/4/1554371627-56764389-395491591002467-858094406580830208-n.png">
+  <img width="200" height="400" src = "https://image.noelshack.com/fichiers/2019/14/5/1554450351-56764389-395491591002467-858094406580830208-n.png">
 </p>
 
 ### Ecran du détail du musical
@@ -58,6 +58,9 @@ Ecran **scrollable** qui affiche une image du musicale sur scene, Le(s) théâtr
 ### Notifications
 
 Il est possible de recevoir des **notifications** !
+<p align="center">
+  <img width="200" height="400" src = "https://image.noelshack.com/fichiers/2019/14/5/1554450308-56367306-1158492177666702-7747403819754979328-n.png">
+</p>
 
 
 
